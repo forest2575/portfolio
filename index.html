@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #0f0f0f;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: #1a1a1a;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .container {
+      padding: 40px;
+    }
+
+    .works {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    a {
+      color: #4da3ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>ポートフォリオ</h1>
+  <p>Web・CGを中心にインタラクティブな体験を制作しています</p>
+</header>
+
+<div class="container">
+
+  <h2>作品一覧</h2>
+
+  <div class="works">
+
+    <!-- 花火 -->
+    <div class="card">
+      <h3>花火CG作品（Three.js）</h3>
+      <p>
+        Three.jsを用いて制作したインタラクティブな花火表現。<br>
+        打ち上げ・爆発・拡散の動きを分けて実装し、自然な動きになるよう調整しました。
+      </p>
+      <p>使用技術：Three.js / TypeScript</p>
+
+      <a href="https://forest2575.github.io/23fi117/" target="_blank">? デモを見る</a><br>
+      <a href="https://github.com/forest2575/cg_fireworks" target="_blank">? GitHub</a>
+    </div>
+
+    <!-- Web -->
+    <div class="card">
+      <h3>オープンキャンパスサイト</h3>
+      <p>
+        学部ごとの特徴に合わせてデザインしたWebサイト。<br>
+        情報の見やすさとデザイン性を意識しました。
+      </p>
+
+      <a href="https://github.com/forest2575/university_website" target="_blank">? GitHub</a>
+    </div>
+
+    <!-- Java -->
+    <div class="card">
+      <h3>地域情報検索アプリ（Java）</h3>
+      <p>
+        郵便番号や住所から人口・観光情報を取得できるアプリ。<br>
+        データベースを活用して情報を表示します。
+      </p>
+
+      <a href="https://github.com/forest2575/java_app" target="_blank">? GitHub</a>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
