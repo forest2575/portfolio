@@ -1,104 +1,169 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
+<meta charset="UTF-8">
+<title>Portfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background: #0f0f0f;
-      color: white;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
 
-    header {
-      text-align: center;
-      padding: 60px 20px;
-      background: #1a1a1a;
-    }
+header {
+  text-align: center;
+  padding: 60px;
+  background: #1a1a1a;
+}
 
-    h1 {
-      margin-bottom: 10px;
-    }
+.container {
+  padding: 40px;
+}
 
-    .container {
-      padding: 40px;
-    }
+.works {
+  display: grid;
+  gap: 30px;
+}
 
-    .works {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-    }
+.card {
+  background: #1f1f1f;
+  padding: 25px;
+  border-radius: 12px;
+}
 
-    .card {
-      background: #1f1f1f;
-      padding: 20px;
-      border-radius: 12px;
-      transition: 0.3s;
-    }
+h3 {
+  margin-top: 0;
+}
 
-    .card:hover {
-      transform: scale(1.03);
-    }
-
-    a {
-      color: #4da3ff;
-      text-decoration: none;
-    }
-  </style>
+a {
+  color: #4da3ff;
+}
+</style>
 </head>
 
 <body>
 
 <header>
   <h1>ポートフォリオ</h1>
-  <p>Web・CGを中心にインタラクティブな体験を制作しています</p>
+  <p>Web・CG分野でインタラクティブな体験制作に取り組んでいます</p>
 </header>
 
 <div class="container">
 
-  <h2>作品一覧</h2>
+<h2>作品一覧</h2>
 
-  <div class="works">
+<div class="works">
 
-    <!-- 花火 -->
-    <div class="card">
-      <h3>花火CG作品（Three.js）</h3>
-      <p>
-        Three.jsを用いて制作したインタラクティブな花火表現。<br>
-        打ち上げ・爆発・拡散の動きを分けて実装し、自然な動きになるよう調整しました。
-      </p>
-      <p>使用技術：Three.js / TypeScript</p>
+<!-- 花火 -->
+<div class="card">
+<h3>花火CG作品（Three.js）</h3>
 
-      <a href="https://forest2575.github.io/23fi117/" target="_blank">? デモを見る</a><br>
-      <a href="https://github.com/forest2575/cg_fireworks" target="_blank">? GitHub</a>
-    </div>
+<img src="cg.png" width="100%">
 
-    <!-- Web -->
-    <div class="card">
-      <h3>オープンキャンパスサイト</h3>
-      <p>
-        学部ごとの特徴に合わせてデザインしたWebサイト。<br>
-        情報の見やすさとデザイン性を意識しました。
-      </p>
+<p>
+TypeScriptとThree.jsを用いて制作したインタラクティブなCG作品です。
+夜の都会の街をテーマに、花火の打ち上げ・爆発・拡散の流れを表現しました。
+</p>
 
-      <a href="https://github.com/forest2575/university_website" target="_blank">? GitHub</a>
-    </div>
+<p>
+<strong>工夫点：</strong><br>
+・打ち上げ、爆発、拡散を分けて実装<br>
+・速度変化やランダム性を加え、自然な動きを再現<br>
+・処理負荷を考慮し、軽量化を意識
+</p>
 
-    <!-- Java -->
-    <div class="card">
-      <h3>地域情報検索アプリ（Java）</h3>
-      <p>
-        郵便番号や住所から人口・観光情報を取得できるアプリ。<br>
-        データベースを活用して情報を表示します。
-      </p>
+<p>使用技術：Three.js / TypeScript</p>
 
-      <a href="https://github.com/forest2575/java_app" target="_blank">? GitHub</a>
-    </div>
+<a href="https://forest2575.github.io/23fi117/" target="_blank">デモ</a><br>
+<a href="https://github.com/forest2575/23fi117" target="_blank">GitHub</a>
+</div>
 
-  </div>
+<!-- OC -->
+<div class="card">
+<h3>オープンキャンパスWebサイト</h3>
+
+<img src="opencampus_web.png" width="100%">
+
+
+<p>
+HTML/CSS/JavaScriptを用いて制作したWebサイトです。
+理系大学をコンセプトに、視認性とデザイン性を意識しました。
+</p>
+
+<p>
+<strong>工夫点：</strong><br>
+・学部ごとにデザインを変更<br>
+・情報の見やすさを意識したレイアウト設計
+</p>
+
+<a href="https://forest2575.github.io/university_website/" target="_blank">デモ</a><br>
+<a href="https://github.com/forest2575/university_website" target="_blank">GitHub</a><br>
+<a href="https://drive.google.com/file/d/1CwNIctr3i_zFgFDneXsjVwdn5OgJZKk0/view" target="_blank">? 動画</a>
+</div>
+
+<!-- ゲーム -->
+<div class="card">
+<h3>アニメーションゲーム（Processing）</h3>
+
+<img src="ballgame.png" width="100%">
+<img src="blockgame.png" width="100%">
+
+<p>
+カーソル操作でボールを動かすゲームと、ブロック崩しを制作しました。
+</p>
+
+<p>
+<strong>工夫点：</strong><br>
+・操作感の調整<br>
+・ゲームバランスの改善
+</p>
+
+<a href="https://github.com/forest2575/ball_game" target="_blank">? ボール操作</a><br>
+<a href="https://github.com/forest2575/block_game" target="_blank">? ブロック崩し</a><br>
+<a href="https://drive.google.com/file/d/12rj5vxeDqIz3P-JbIx9EMu4U9B-d9bt4/view" target="_blank">? 動画</a>
+</div>
+
+<!-- UI -->
+<div class="card">
+<h3>セルフオーダーシステムUI</h3>
+
+<img src="selforder.png" width="100%">
+
+<p>
+Figmaを用いて制作した飲食店向けUIデザインです。
+</p>
+
+<p>
+<strong>工夫点：</strong><br>
+・直感的な操作導線<br>
+・視認性を考慮したデザイン設計
+</p>
+
+<a href="https://drive.google.com/file/d/1jNcUjnwqUlFsoNXKVRUshADxU9OsyUma/view" target="_blank">動画</a>
+</div>
+
+<!-- Java -->
+<div class="card">
+<h3>地域情報検索アプリ（Java）</h3>
+
+<img src="areasearch.png" width="100%">
+
+<p>
+郵便番号や住所から人口・観光情報を検索できるアプリを制作しました。
+</p>
+
+<p>
+<strong>工夫点：</strong><br>
+・データベース連携<br>
+・検索結果の見やすさを意識
+</p>
+
+<a href="https://github.com/forest2575/java_app" target="_blank">GitHub</a>
+</div>
+
+</div>
 
 </div>
 
